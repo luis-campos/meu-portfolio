@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <div class="container">
+      <h1 class="header__title"><i class="fas fa-file-invoice"></i> Meu Portfólio</h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#about" class="header__nav-link"><i class="fas fa-user"></i> Sobre</a>
+          </li>
+          <li class="header__nav-item"><a href="#projects" class="header__nav-link"><i class="fas fa-folder-open"></i>
+              Projetos</a></li>
+          <li class="header__nav-item"><a href="#contact" class="header__nav-link"><i class="fas fa-envelope"></i>
+              Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2 class="section__title"><i class="fas fa-star"></i> Bem-vindo ao meu portfólio!</h2>
+      <p class="section__description">Aqui eu falo um pouco sobre mim, alguns projetos pessoais e como entrar em contato
+        comigo. Espero que goste!</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section__title"><i class="fas fa-user"></i> Sobre mim</h2>
+      <p class="section__description">Sou muito interessado por tecnologia e gosto de ver o avanço dessa ciência.
+        Formado em Redes de Computadores pela ETEC de Embu e Desenvolvedor de Software Web Full Stack pela Trybe, busco
+        ampliar meus conhecimentos e quero um dia poder desenvolver algo que ajude as pessoas de forma significativa. Hoje trabalho como Analista de QA na Accenture. Sou responsável pelo desenvolvimento de algumas atividades, são elas: Consultoria com foco em entregas rápidas de valor, garantindo a qualidade do produto usando metodologias ágeis, ajudando Designer na criação de fluxos e regras e PO's na criação de estórias de usuário, escrevendo cenários e automações de teste para back-end e front-end.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section__title"><i class="fas fa-list"></i> Habilidades</h2>
+      <div class="skills-list">
+        <div class="skills-list">
+          <div class="skill">
+            <img src="./images/cypress-logo.png" alt="Cypress">
+            <label>Cypress.io</label>
+          </div>
+          <div class="skill">
+            <img src="./images/javascript-logo.png" alt="JavaScript">
+            <label>JavaScript</label>
+          </div>
+          <div class="skill">
+            <img src="./images/cucumber-logo.png" alt="JavaScript">
+            <label>Cucumber</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section__title"><i class="fas fa-folder-open"></i> Projetos</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="./images/ruby-cucumber.png" alt="Logo ruby & cucumber" class="project-image">
+          <h3 class="project-title">Testes automatizados Web</h3>
+          <p class="project-description">Esse projeto foi criado apenas para aprender alguns conceitos de teste
+            automatizado em web, utilizando cucumber e ruby.</p>
+          <a href="https://github.com/luis-campos/Testes-Web" class="project-link" target="_blank">Ver mais</a>
+        </div>
+
+        <div class="project-card">
+          <img src="./images/cypress.png" alt="Logo Cypress.io" class="project-image">
+          <h3 class="project-title">Teste de API com Cypress.io</h3>
+          <p class="project-description">Projeto criado para aprender sobre automação de testes de API e contrato com Cypress.io.</p>
+          <a href="https://github.com/luis-campos/cypress-api" class="project-link" target="_blank">Ver mais</a>
+        </div>
+
+        <div class="project-card">
+          <img src="./images/e-commerce.jpg" alt="Imagem e-commerce" class="project-image">
+          <h3 class="project-title">Site para treinamento de testes</h3>
+          <p class="project-description">E-commerce criado para ser usado de base para escrita de cenários de teste, testes manuais e automação de testes.</p>
+          <a href="https://github.com/luis-campos/loja-onlines" class="project-link" target="_blank">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-envelope"></i> Fale comigo</h2>
+      <div class="contact-form">
+        <form action="https://formsubmit.co/gucampos845@gmail.com" method="POST">
+          <input type="text" id="name" name="_subject" placeholder="Assunto" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/luis-campos12/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://github.com/luis-campos" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+    </div>
+    <div class="footer__contact">
+      <i class="fas fa-phone"></i>
+      <a href="tel:(11)99679-4163">(11) 99679-4163</a>
+    </div>
+    <div class="footer__contact">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:gucampos845@gmail.com">gucampos845@gmail.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>
